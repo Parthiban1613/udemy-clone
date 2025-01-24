@@ -39,6 +39,9 @@ body{
     gap: 10px;
     align-items: center;
 }
+.navbar__s4{
+    display: none;
+}
 .categories{
     display: flex;
     padding: 10px;
@@ -69,7 +72,7 @@ body{
     background-color:#a435f0;
     padding: 2%;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 15%;
     animation-name: zoom;
     animation-duration: 2s;
@@ -144,5 +147,23 @@ body{
 .footer__one p{
     margin: 10px;
 }
-
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+}
 
